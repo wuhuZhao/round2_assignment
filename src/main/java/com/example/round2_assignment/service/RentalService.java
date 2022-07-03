@@ -85,7 +85,7 @@ public class RentalService {
      * @throws Exception
      */
     public Integer cancel(Integer id) throws Exception {
-        if (bookingDao.bookingVoList().stream().filter(bookingVo -> bookingVo.getId().equals(id)).count() == 0 ) {
+        if (bookingDao.bookingVoList().stream().noneMatch(bookingVo -> bookingVo.getId().equals(id))) {
             throw  new Exception("booking id is not exists");
         }
         return bookingDao.cancel(id);

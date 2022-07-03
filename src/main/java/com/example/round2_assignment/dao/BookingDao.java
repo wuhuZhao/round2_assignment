@@ -23,7 +23,7 @@ public class BookingDao {
      * @return
      */
     public List<BookingVo> queryBookingListByCarId(Integer carId) {
-        return db.get(carId);
+        return db.getOrDefault(carId, new ArrayList<>());
     }
 
     /***
