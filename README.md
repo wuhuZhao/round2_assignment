@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `bookingVo`(
 {
   "code": 200,
   "data": [
-  	  "id":1,
+  	    "id":1,
 		"carId": 1,
 		"endTime": "2022-07-03T07:51:26.618Z",
 		"startTime": "2022-07-03T07:59:26.618Z"
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `bookingVo`(
   "msg": ""
 }
 ```
-```
+```json
 // POST http://42.194.133.175:10111/cancel
 // req
 {
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `bookingVo`(
 }
 ```
 #### valid request
-```
+```json
 // POST http://42.194.133.175:10111/cancel
 // req
 {
